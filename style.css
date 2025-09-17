@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    font-size: 20px;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: black;
+    color: white;
+    
+    height: 100%;
+}
+.Menu{
+    padding: 5px;
+    background-color: rgb(46, 45, 45);
+}
+.Menu p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Menu ul{
+    display: none;
+}
+.Menu:hover ul{
+ display: block;
+ background-color: rgb(47, 47, 47);
+}
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+footer ul{
+    list-style: none;
+}
