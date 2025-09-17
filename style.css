@@ -8,27 +8,30 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    
     background-color: black;
-    color: white;
-    
+    color: white;    
     height: 100%;
 }
 .Menu{
     padding: 20px;
     background-color: rgb(46, 45, 45);
+    border-radius: 20px;
+    width: 30%;
 }
-.Menu p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Menu ul {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: rgb(46, 45, 45);
+    border-radius: 10px;
 }
-.Menu ul{
-    display: none;
-}
-.Menu:hover ul{
- display: block;
- background-color: rgb(47, 47, 47);
+
+.Menu:hover ul {
+    opacity: 1;
+    visibility: visible;
+    max-height: 500px; /* достатньо для всіх пунктів меню */
 }
 .Menu ul li a{
     padding: 10px;
@@ -41,6 +44,8 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
+    background-color: rgb(46, 45, 45);
+    border-radius: 20px;
 }
 footer ul{
     list-style: none;
