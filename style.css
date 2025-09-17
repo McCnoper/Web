@@ -15,7 +15,7 @@ body{
     height: 100%;
 }
 .Menu{
-    padding: 5px;
+    padding: 20px;
     background-color: rgb(46, 45, 45);
 }
 .Menu p{
@@ -30,7 +30,13 @@ body{
  display: block;
  background-color: rgb(47, 47, 47);
 }
+.Menu ul li a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
 footer{
+    padding: 20px;
     display: flex;
     position: fixed;
     bottom: 0;

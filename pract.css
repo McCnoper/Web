@@ -1,0 +1,17 @@
+th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.Day td p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    display: grid;
+    grid-template-columns: auto;
+}
+.Week{
+    
+}
