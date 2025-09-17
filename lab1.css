@@ -1,4 +1,39 @@
 *{
     background-color: black;
     color: white;
+    font-size: 20px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: grey; */
+    width: 50%;
+}
+input{
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+    width: 50%;
+    box-shadow: 7px 5px 5px red;
+}
+#password{
+    position: relative;
+    left: 100px;
+}
+#fname{
+    position: relative;
+    top: -30px;
+    right: 100px;
+}
+#lname{
+    position: relative;
+    right: 100px;
+    top: 30px;
 }
