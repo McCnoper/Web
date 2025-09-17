@@ -1,0 +1,65 @@
+/* 1 */
+li:first-of-type{
+    font-weight: bolder;
+}
+/* 2 */
+a:last-child{
+    color: red;
+}
+/* 3 */
+input:disabled{
+    background: grey;
+}
+/* 4 */
+div > p{
+    font-weight: bold;
+}
+/* 5 */
+*[href ^= "https"]{
+    color: green !important;
+}
+/* 6 */
+input[type="text"]{
+    border: 1px solid blue 
+}
+/* 7 */
+li:first-child,
+li:last-child{
+    font-size: 24px;
+}
+/* 8 */
+div p{
+    font-size: 18px;
+}
+/* 9 */
+input:checked{
+    background: rgb(0, 0, 0);
+}
+/* 10 */
+li>a{
+    text-decoration: underline;
+}
+/* 11 */
+li:nth-child(2n){
+    font-weight: bolder;
+}
+/* 12 */
+input[type="text"]:not(:disabled){
+    background: grey;
+}
+/* 13 */
+p:first-child{
+    font-size: 24px;
+}
+/* 14 */
+.special + li{
+    text-decoration:line-through;
+}
+/* 15 */
+p::first-letter{
+    font-size: 36px;
+}
+/* 16 */
+a::after{
+    content: "↗";
+}
