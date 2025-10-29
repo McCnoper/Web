@@ -100,3 +100,6 @@ textarea{
     border: 0;
     resize: none;
 }
+h1{
+    margin-left: 5px;
+}
