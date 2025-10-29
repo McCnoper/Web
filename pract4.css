@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.keyboard{
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 1300px;
+}
+.top-keys{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+.f-keys{
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 1fr;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.f-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+.f-group .key{
+    width: 30px;
+    height: 30px;
+}
+.other-keys{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.indicators{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.indicator{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    height: 60px;
+}
+.keyboard-body{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin-top: 10px;
+}
+.main{
+    background-color: grey;
+    border: 3px solid white;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-auto-rows: 50px;    
+    gap: 5px;
+    padding: 5px;
+}
+.wide{
+    grid-column: span 2;
+}
+/* .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    gap: 5px;
+
+} */
+.zero{
+    grid-area: zero;
+}
+.key{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    /* height: 30px;
+    width: 30px; */
+}
+.key:active{
+    background-color: aliceblue;
+}
+.top-keys .key{
+    height: 30px;
+    width: 33px;
+}
+.numkey:active{
+    background-color: aliceblue;
+}
+.enter{
+    grid-row: span 2;
+    position: relative;
+}
+.numkey{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.space{
+    grid-column: span 4;
+}
+.navigation{
+    background-color: grey;
+    border: 3px solid white;
+    color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    row-gap: 55px;
+}
+.edit-keys{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 50px;
+    gap: 5px;
+ 
+}
+.arrows{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: 
+        ". up ."
+        "left down right";
+}
+.arrows .key{
+    height: 25px;
+    width: 25px;
+}
+.numpad{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "numlock slash star minus"
+        "seven eight nine plus"
+        "four five six plus"
+        "one two three enter"
+        "zero zero dot enter";
+    gap: 5px;
+}
