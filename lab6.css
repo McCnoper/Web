@@ -6,6 +6,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
+    bottom: 0;
 }
 .sky {
     position: absolute;
@@ -13,10 +14,6 @@ body {
     height: 40%;
     background: linear-gradient(#0d9eff, #aafff1);
     z-index: 3;
-}
-@keyframes skyShift {
-    0%, 100% { filter: brightness(1); }
-    50% { filter: brightness(0.9); }
 }
 .cloud {
     position: absolute;
