@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+}
+.menu{
+    display: flex;
+    justify-self: center;
+    gap: 0.5vw;
+    width: 80vw;
+    min-width: 450px;
+    padding: 10px;
+    background-color: #4e4e4e;
+    color: #ffffff;
+    text-align: center;
+}
+@media (max-width: 600px){
+    .menu{
+        flex-direction: column;
+        min-width: 200px;
+    }
+}
+.menu p{
+    background-color: #706f6f;
+    padding: 10px;
+}
