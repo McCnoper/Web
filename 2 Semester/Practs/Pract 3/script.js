@@ -69,3 +69,63 @@ function initApp() {
 }
 
 initApp();
+
+class Car {
+    #vin;
+    constructor(vin,model, year) {
+        this.vin = vin;
+        this.model = model;
+        this.year = year;
+    }
+    set vin(value) {
+        if (!/^[A-HJ-NPR-Z0-9]{17}$/.test(value)) {
+            throw new Error("Invalid VIN format.");
+        }
+        this.#vin = value;
+    }
+    get vin() { return this.#vin; }
+
+    display() {        
+        const info = `Car: ${this.model}, Year: ${this.year}, VIN: ${this.vin}`;
+        this._output(info);
+    }
+    _output(text) {
+        alert(text);
+        console.log(text);
+    }
+}
+class ElectricCar extends Car {
+    constructor(vin, model, year, battery) {
+        super(vin, model, year);
+        this.battery = battery;
+    }
+    display() {
+        const info = `Electric Car: ${this.model}, Year: ${this.year}, VIN: ${this.vin}, Battery: ${this.battery} kWh`;
+        this._output(info);
+    }
+}
+
+function initCarApp() {
+    try {
+        const vin = prompt("Enter VIN (17 characters):");
+        if (!vin) throw new Error("VIN is required.");
+        const model = prompt("Enter model:");
+        if (!model) throw new Error("Model is required.");
+        const year = prompt("Enter year:");
+        if (isNaN(Number(year)) || Number(year) <= 1885) throw new Error("Invalid year.");
+        const type = prompt("Is it electric? (yes/no):");
+        let car;
+        if (type.toLowerCase() === "yes") {
+            const battery = prompt("Enter battery capacity (kWh):");
+            if (isNaN(Number(battery)) || Number(battery) <= 0) throw new Error("Invalid battery capacity.");
+            car = new ElectricCar(vin, model, year, battery);
+        } else {
+            car = new Car(vin, model, year);
+        }
+        car.display();
+    } catch (error) {
+        alert(`Error: ${error.message}`);
+    }
+}
+
+initCarApp();
