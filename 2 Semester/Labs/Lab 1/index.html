@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1-3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="resumeContainer">
+        <section class="resume">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Name Surname" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="16-99" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+            <label for="experience">Years of Experience:</label>
+            <input type="number" id="experience" placeholder="0-50" required>
+            <button id="submit">Submit</button>
+        </section>
+        <section class="resumeOutput"></section>
+    </main>
+</body>
+</html>
