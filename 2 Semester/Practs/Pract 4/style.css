@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#taskList{
+    width: 400px;
+    min-height: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+#taskList li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #cecece;
+    word-break:break-all;
+    list-style: none;
+    
+}
+#taskList li:last-child{
+    border-bottom: none;
+}
