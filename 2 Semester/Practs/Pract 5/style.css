@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+#pokemonCard {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    max-width: 300px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#pokeImg {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    align-self: center;
+}
