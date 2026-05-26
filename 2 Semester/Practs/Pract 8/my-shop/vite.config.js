@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Web/2 Semester/Practs/Pract 8/my-shop/dist/'
+  base: '/Web/2 Semester/Practs/Pract 8/'
 })
